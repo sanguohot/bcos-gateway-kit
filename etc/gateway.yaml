@@ -6,9 +6,9 @@ database:
       port: 6379
     options:
       db: 1
-gateway:
-  protocol:
-    https:
-      listenPort: 443
-      privateKey: './key/privkey.pem'
-      certificate: './key/fullchain.pem'
+#gateway:
+#  protocol:
+#    https:
+#      listenPort: 443
+#      privateKey: './key/privkey.pem'
+#      certificate: './key/fullchain.pem'
