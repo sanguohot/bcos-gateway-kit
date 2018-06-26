@@ -1,0 +1,20 @@
+---
+name: finchain-api-all
+version: v1
+path: api/v1/
+proxy:
+    target:
+        host: http://192.168.5.98:443/api/v1
+circuitBreaker:
+    timeout: 30 seconds
+    resetTimeout: 1 minute
+    timeWindow: 2 minutes
+    maxFailures: 5
+throttling:
+    timeWindow: 1 minute
+    delay: one second
+    delayAfter: 220
+    max: 10000
+cors:
+    origin:
+        enableAll: true	
