@@ -10,13 +10,13 @@ proxy:
 circuitBreaker:
   timeout: 30 seconds
   resetTimeout: 1 minute
-  timeWindow: 1 minutes
+  timeWindow: 1 minute
   maxFailures: 5
 throttling:
   timeWindow: 1 minute
   delay: one second
-  delayAfter: 220
-  max: 10000
+  delayAfter: 160
+  max: 200
 cors:
   origin:
     enableAll: true
